@@ -1,6 +1,6 @@
 # Django CRUD REST API
 
-![Python](https://img.shields.io/badge/Python-3.5%20%7C%203.8%20%7C%203.9-blue)
+![Python](https://img.shields.io/badge/Python-3.5%20%7C%203.6%20%7C%203.7%20%7C%203.8-blue)
 ![Django](https://img.shields.io/badge/Django-3.2-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
@@ -56,5 +56,14 @@ Before you begin, ensure you have met the following requirements:
    python manage.py runserver
    ```
 6. Access the API at `http://127.0.0.1:8000/api/`
+
+## API Endpoints
+
+- **GET /api/user:** Retrieve a list of all users.
+- **GET /api/users/{name}:** Retrieve details of a specific user, through the name.
+- **POST /api/user:** Create a new user.
+- **PUT /api/user/{name}:** Update an existing user.
+- **DELETE /api/user/{name}/:** Delete an existing user.
+
 
    
