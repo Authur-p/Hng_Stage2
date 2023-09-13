@@ -45,7 +45,7 @@ update_response = update_person('example1', 'User1')
 print('Update Person Response:')
 print(update_response.status_code)
 print(update_response.text)
-print('\n')
+
 
 # Test the delete endpoint
 delete_response = delete_person('User1')
