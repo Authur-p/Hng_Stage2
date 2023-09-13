@@ -31,7 +31,7 @@ create_response = create_person('example1')
 print('Create Person Response:')
 print(create_response.status_code)
 print(create_response.text)
-print('\n')
+
 
 # Test the read endpoint
 read_response = read_person('example1')
