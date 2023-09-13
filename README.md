@@ -1,7 +1,7 @@
 # Django CRUD REST API
 
-![Python](https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9-blue)
-![Django](https://img.shields.io/badge/Django-3.x-green)
+![Python](https://img.shields.io/badge/Python-3.5%20%7C%203.8%20%7C%203.9-blue)
+![Django](https://img.shields.io/badge/Django-3.2-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 A simple CRUD (Create, Read, Update, Delete) REST API built with Django for managing user data.
@@ -27,8 +27,8 @@ A simple CRUD (Create, Read, Update, Delete) REST API built with Django for mana
 
 Before you begin, ensure you have met the following requirements:
 
-- Python 3.x installed.
-- Django 3.x installed.
+- Python 3.5 installed.
+- Django 3.2 installed.
 - [PostgreSQL](https://www.postgresql.org/) or another database system set up.
 
 ## Getting Started
@@ -37,3 +37,24 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/yourusername/django-crud-api.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Hng_Stage2
+   ```
+3. Install project dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Create a database migrations:
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+5. Start the development server:
+   ```bash
+   python manage.py runserver
+   ```
+6. Access the API at `http://127.0.0.1:8000/api/`
+
+   
