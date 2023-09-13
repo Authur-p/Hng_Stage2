@@ -70,7 +70,7 @@ Before you begin, ensure you have met the following requirements:
 ### Create a new user
 
 ```http
-POST /api/users/
+POST /api/user/
 Content-Type: application/json
 
 {
@@ -79,6 +79,15 @@ Content-Type: application/json
   "age": "25"
 }
 ```
+- Response:
+  ```json
+  {
+     "id": 1,
+     "name": "newuser",
+     "email": "newuser@example.com",
+     "age": "25"
+  }
+  ```
 
 
    
