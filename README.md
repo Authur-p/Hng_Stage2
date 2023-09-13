@@ -13,8 +13,8 @@ A simple CRUD (Create, Read, Update, Delete) REST API built with Django for mana
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Error Handling](#error-handling)
+- [Testing](#testing)
 
 ## Features
 
@@ -153,6 +153,16 @@ DELETE /api/user/{name}
 204 No Content
 ```
 
+
+## Error Handling
+
+- If the provided ID does not exist, you will receive a `404 Not Found` response.
+- If there is an internal server error, you will receive a `500 Internal Server Error` response.
+
+## Testing
+
+- To run test, djangorestframework, which was installed, provides a web based means of testing all endpoints.
+- Also, using Postman is also a great way of testing all the endpoints.
 
 
 
