@@ -27,28 +27,28 @@ def delete_person(name):
     return response
 
 # Test the create endpoint
-create_response = create_person('John Doe')
+create_response = create_person('example1')
 print('Create Person Response:')
 print(create_response.status_code)
 print(create_response.text)
 print('\n')
 
 # Test the read endpoint
-read_response = read_person(1)
+read_response = read_person('example1')
 print('Read Person Response:')
 print(read_response.status_code)
 print(read_response.text)
 print('\n')
 
 # Test the update endpoint
-update_response = update_person(1, 'Jane Doe')
+update_response = update_person('example1', 'User1')
 print('Update Person Response:')
 print(update_response.status_code)
 print(update_response.text)
 print('\n')
 
 # Test the delete endpoint
-delete_response = delete_person(1)
+delete_response = delete_person('User1')
 print('Delete Person Response:')
 print(delete_response.status_code)
 print(delete_response.text)
