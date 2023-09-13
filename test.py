@@ -38,7 +38,7 @@ read_response = read_person('example1')
 print('Read Person Response:')
 print(read_response.status_code)
 print(read_response.text)
-print('\n')
+
 
 # Test the update endpoint
 update_response = update_person('example1', 'User1')
