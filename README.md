@@ -70,7 +70,7 @@ Before you begin, ensure you have met the following requirements:
 ### Create a new user
 
 ```http
-POST /api/user/
+POST /api/user
 Content-Type: application/json
 
 {
@@ -80,6 +80,7 @@ Content-Type: application/json
 }
 ```
 - Response:
+  
 ```json
 {
   "id": 1,
@@ -88,6 +89,73 @@ Content-Type: application/json
   "age": "25"
 }
 ```
+
+### List of all user
+
+```http
+GET /api/user
+```
+
+### Get a person by name
+
+```http
+GET /api/user/{name}
+```
+
+- Response:
+  
+```json
+{
+  "id": 1,
+  "name": "newuser",
+  "email": "newuser@example.com",
+  "age": "25"
+}
+```
+
+### Update an existing user
+
+```http
+PUT /api/user/{name}
+{
+  "name": "newuser-updated",
+  "email": "newuser@example.com",
+  "age": "25"
+}
+```
+
+- Response:
+  
+```json
+{
+  "id": 1,
+  "name": "newuser-updated",
+  "email": "newuser@example.com",
+  "age": "25"
+}
+```
+
+### Delete an existing user
+
+```http
+DELETE /api/user/{name}
+{
+   "id": 1,
+  "name": "newuser-updated",
+  "email": "newuser@example.com",
+  "age": "25"
+}
+```
+
+- Response:
+  
+```http
+204 No Content
+```
+
+
+
+
 
 
    
