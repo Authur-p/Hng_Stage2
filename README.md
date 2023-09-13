@@ -59,11 +59,26 @@ Before you begin, ensure you have met the following requirements:
 
 ## API Endpoints
 
-- **GET /api/user:** Retrieve a list of all users.
-- **GET /api/users/{name}:** Retrieve details of a specific user, through the name.
-- **POST /api/user:** Create a new user.
-- **PUT /api/user/{name}:** Update an existing user.
-- **DELETE /api/user/{name}/:** Delete an existing user.
+- **`GET /` api/user:** Retrieve a list of all users.
+- **`GET /api/users/{name}`:** Retrieve details of a specific user, through the name.
+- **`POST /api/user`:** Create a new user.
+- **`PUT /api/user/{name}`:** Update an existing user.
+- **`DELETE /api/user/{name}`:** Delete an existing user.
+
+## Usage
+
+### Create a new user
+
+```http
+POST /api/users/
+Content-Type: application/json
+
+{
+  "name": "newuser",
+  "email": "newuser@example.com",
+  "age": "25"
+}
+```
 
 
    
