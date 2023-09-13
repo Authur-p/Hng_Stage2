@@ -59,7 +59,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## API Endpoints
 
-- **`GET /` api/user:** Retrieve a list of all users.
+- **`GET /api/user`:** Retrieve a list of all users.
 - **`GET /api/users/{name}`:** Retrieve details of a specific user, through the name.
 - **`POST /api/user`:** Create a new user.
 - **`PUT /api/user/{name}`:** Update an existing user.
