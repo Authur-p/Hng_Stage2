@@ -17,6 +17,11 @@
 
 This document provides detailed documentation for the Django CRUD REST API. The API allows you to manage user data, including creating, reading, updating, and deleting user records. It follows RESTful principles and provides secure authentication and authorization.
 
+Base URL
+```bash
+https://authur.pythonanywhere.com/api/user
+```
+
 ## API Endpoints
 
 ### GET /api/user/
@@ -140,7 +145,7 @@ git remote add origin git@github.com:user-name/myprojectname.git
 git push
 ```
 
-2. Go to [Pythonanywhere](#pythonanywhere.com)
+2. Go to [Pythonanywhere](https://www.pythonanywhere.com/), create and account, then deploy it there
 
 
 
