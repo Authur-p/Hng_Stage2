@@ -80,14 +80,14 @@ Content-Type: application/json
 }
 ```
 - Response:
-  ```json
-  {
-     "id": 1,
-     "name": "newuser",
-     "email": "newuser@example.com",
-     "age": "25"
-  }
-  ```
+```json
+{
+  "id": 1,
+  "name": "newuser",
+  "email": "newuser@example.com",
+  "age": "25"
+}
+```
 
 
    
