@@ -52,7 +52,7 @@ Create a new user.
 Content-Type: application/json
 
 ```json
-{
+  {
     "name": "user3"
   }
 ```
@@ -91,7 +91,7 @@ Update an existing user.
 Content-Type: application/json
 
 ```json
-{
+  {
     "name": "user3-updated"
   }
 ```
