@@ -94,14 +94,14 @@ GET /api
   
 ```json
 [
-{
-  "id": 1,
-  "name": "newuser"
-},
-{
-  "id": 2,
-  "name": "user2"
-}
+   {
+     "id": 1,
+     "name": "newuser"
+   },
+   {
+     "id": 2,
+     "name": "user2"
+   }
 ]
 ```
 
