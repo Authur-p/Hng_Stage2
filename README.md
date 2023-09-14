@@ -29,14 +29,13 @@ Before you begin, ensure you have met the following requirements:
 
 - Python 3.5 installed.
 - Django 3.2 installed.
-- [PostgreSQL](https://www.postgresql.org/) or another database system set up.
 
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/django-crud-api.git
+   git clone https://github.com/Authur-p/Hng_Stage2.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -59,24 +58,22 @@ Before you begin, ensure you have met the following requirements:
 
 ## API Endpoints
 
-- **`GET /api/user`:** Retrieve a list of all users.
-- **`GET /api/users/{name}`:** Retrieve details of a specific user, through the name.
-- **`POST /api/user`:** Create a new user.
-- **`PUT /api/user/{name}`:** Update an existing user.
-- **`DELETE /api/user/{name}`:** Delete an existing user.
+- **`GET /api`:** Retrieve a list of all users.
+- **`GET /api/{name}`:** Retrieve details of a specific user, through the name.
+- **`POST /api`:** Create a new user.
+- **`PUT /api/{name}`:** Update an existing user.
+- **`DELETE /api/{name}`:** Delete an existing user.
 
 ## Usage
 
 ### Create a new user
 
 ```http
-POST /api/user
+POST /api
 Content-Type: application/json
 
 {
-  "name": "newuser",
-  "email": "newuser@example.com",
-  "age": "25"
+  "name": "newuser"
 }
 ```
 - Response:
@@ -84,22 +81,34 @@ Content-Type: application/json
 ```json
 {
   "id": 1,
-  "name": "newuser",
-  "email": "newuser@example.com",
-  "age": "25"
+  "name": "newuser"
 }
 ```
 
 ### List of all user
 
 ```http
-GET /api/user
+GET /api
+```
+
+- Response:
+  
+```json
+[{
+  "id": 1,
+  "name": "newuser"
+},
+{
+  "id": 2,
+  "name": "user2"
+}
+]
 ```
 
 ### Get a person by name
 
 ```http
-GET /api/user/{name}
+GET /api/{name}
 ```
 
 - Response:
@@ -107,20 +116,16 @@ GET /api/user/{name}
 ```json
 {
   "id": 1,
-  "name": "newuser",
-  "email": "newuser@example.com",
-  "age": "25"
+  "name": "newuser"
 }
 ```
 
 ### Update an existing user
 
 ```http
-PUT /api/user/{name}
+PUT /api/{name}
 {
-  "name": "newuser-updated",
-  "email": "newuser@example.com",
-  "age": "25"
+  "name": "newuser-updated"
 }
 ```
 
@@ -129,21 +134,17 @@ PUT /api/user/{name}
 ```json
 {
   "id": 1,
-  "name": "newuser-updated",
-  "email": "newuser@example.com",
-  "age": "25"
+  "name": "newuser-updated"
 }
 ```
 
 ### Delete an existing user
 
 ```http
-DELETE /api/user/{name}
+DELETE /api/{name}
 {
    "id": 1,
-  "name": "newuser-updated",
-  "email": "newuser@example.com",
-  "age": "25"
+  "name": "newuser-updated"
 }
 ```
 
