@@ -15,7 +15,7 @@
 
 ## Introduction
 
-This document provides detailed documentation for the Django CRUD REST API. The API allows you to manage user data, including creating, reading, updating, and deleting user records. It follows RESTful principles and provides secure authentication and authorization.
+This document provides detailed documentation for the Django CRUD REST API. The API allows you to manage user data, including creating, reading, updating, and deleting user records.
 
 Base URL
 ```bash
