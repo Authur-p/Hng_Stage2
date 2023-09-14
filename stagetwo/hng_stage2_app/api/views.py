@@ -12,3 +12,7 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     lookup_field = 'name'
+
+    def get_queryset(self):
+        name = self.kwargs['name']
+        return User.objects.filter(name=name)
