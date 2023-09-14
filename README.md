@@ -26,8 +26,9 @@ A simple CRUD (Create, Read, Update, Delete) REST API built with Django for mana
 
 Before you begin, ensure you have met the following requirements:
 
-- Python 3.5 installed.
-- Django 3.2 installed.
+- Python 3.5 and above installed.
+- Django 3.2 and above installed.
+- djangorestframework 3.14.x installed
 
 ## Getting Started
 
