@@ -4,12 +4,12 @@
 
 1. [Introduction](#introduction)
 2. [API Endpoints](#api-endpoints)
-    - [GET /api/users/](#get-apiusers)
-    - [GET /api/users/{id}/](#get-apiusersid)
-    - [POST /api/users/](#post-apiusers)
-    - [PUT /api/users/{id}/](#put-apiusersid)
-    - [PATCH /api/users/{id}/](#patch-apiusersid)
-    - [DELETE /api/users/{id}/](#delete-apiusersid)
+    - [GET /api](#get-api)
+    - [GET /api/{name}](#get-apiname)
+    - [POST /api](#post-api)
+    - [PUT /api/{name}](#put-apiname)
+    - [PATCH /api/{name}](#patch-apiname)
+    - [DELETE /api/{name}](#delete-apiname)
 3. [Known Limitation](#known-limitation)
 4. [Deployment](#deployment)
 
@@ -19,12 +19,12 @@ This document provides detailed documentation for the Django CRUD REST API. The 
 
 Base URL
 ```bash
-https://authur.pythonanywhere.com/api/user
+https://authur.pythonanywhere.com/api
 ```
 
 ## API Endpoints
 
-### GET /api/user/
+### GET /api
 
 Retrieve a list of all users.
 
@@ -37,29 +37,23 @@ Retrieve a list of all users.
 [
   {
     "id": 1,
-    "name": "user1",
-    "email": "user1@example.com",
-    "age": ""32
+    "name": "user1"
   },
   {
     "id": 2,
-    "name": "user2",
-    "email": "user2@example.com",
-    "age": "56"
+    "name": "user2"
   }
 ]
 ```
 
-### POST /api/user/
+### POST /api
 
 Create a new user.
 Content-Type: application/json
 
 ```json
 {
-    "name": "user3",
-    "email": "user1@example.com",
-    "age": "43"
+    "name": "user3"
   }
 ```
 
@@ -71,13 +65,11 @@ Content-Type: application/json
 ```json
   {
     "id": 3,
-    "name": "user3",
-    "email": "user3@example.com"
-    "age": "43"
+    "name": "user3"
   }
 ```
 
-### GET /api/user/{name}
+### GET /api/{name}
 
 Get a user through name.
 
@@ -89,22 +81,18 @@ Get a user through name.
 ```json
   {
     "id": 3,
-    "name": "user3",
-    "email": "user1@example.com",
-    "age": "43"
+    "name": "user3"
   }
 ```
 
-### PUT /api/user/{name}
+### PUT /api/{name}
 
 Update an existing user.
 Content-Type: application/json
 
 ```json
 {
-    "name": "user3-updated",
-    "email": "user1@example.com",
-    "age": "43"
+    "name": "user3-updated"
   }
 ```
 
@@ -116,13 +104,11 @@ Content-Type: application/json
 ```json
   {
     "id": 3,
-    "name": "user3-updated",
-    "email": "user3@example.com"
-    "age": "43"
+    "name": "user3-updated"
   }
 ```
 
-### DDELETE /api/user/{name}
+### DDELETE /api/{name}
 
 Delete a user.
 
