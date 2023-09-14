@@ -131,7 +131,7 @@ git remote add origin git@github.com:user-name/myprojectname.git
 git push
 ```
 
-2. Go to [Pythonanywhere](https://www.pythonanywhere.com/), create and account, then deploy it there
+2. Go to [Pythonanywhere](https://www.pythonanywhere.com/), create an account, then deploy it there
 
 
 
