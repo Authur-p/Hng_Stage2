@@ -20,7 +20,6 @@ A simple CRUD (Create, Read, Update, Delete) REST API built with Django for mana
 
 - Create, read, update, and delete user records.
 - RESTful API design for easy integration with front-end applications.
-- Secure authentication and authorization.
 - Detailed documentation of API endpoints.
 
 ## Prerequisites
@@ -94,7 +93,8 @@ GET /api
 - Response:
   
 ```json
-[{
+[
+{
   "id": 1,
   "name": "newuser"
 },
