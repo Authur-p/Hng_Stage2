@@ -1,4 +1,4 @@
-# Django CRUD REST API
+# HNG stage 2 CRUD API
 
 ![Python](https://img.shields.io/badge/Python-3.5%20%7C%203.6%20%7C%203.7%20%7C%203.8-blue)
 ![Django](https://img.shields.io/badge/Django-3.2-green)
